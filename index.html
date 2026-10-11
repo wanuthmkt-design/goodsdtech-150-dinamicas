@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>150 Dinâmicas para Adultos — Edição Vibrante</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=DM+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,1,0&display=block">
+<script src="./image-slot.js"></script>
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1620025622992050');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1620025622992050&amp;ev=PageView&amp;noscript=1" alt=""></noscript>
+<!-- End Meta Pixel -->
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#FBF8F2;color:#1D1B26;font-family:'DM Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;overflow-x:hidden}
+*{box-sizing:border-box}
+a{color:oklch(0.48 0.19 262)}
+a:hover{color:oklch(0.40 0.19 262)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid oklch(0.52 0.19 262);outline-offset:3px}
+@keyframes ctaPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+@keyframes marqueeLeft{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 10px))}}
+@keyframes marqueeRight{from{transform:translateX(calc(-50% - 10px))}to{transform:translateX(0)}}
+@media (prefers-reduced-motion:reduce){[style*="marquee"]{animation:none !important}}
+</style>
+</helmet>
+
+<div style="min-height:100vh;background:#FBF8F2;overflow-x:clip">
+
+<!-- 1. BARRA SUPERIOR -->
+<div style="background:#1D1B26;color:#FBF8F2;text-align:center;padding:10px 16px;font-size:14px;font-weight:500;display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap">
+  <span>Promoção válida somente hoje <strong style="color:oklch(0.87 0.16 92)">{{ today }}</strong></span>
+</div>
+
+<!-- 2. HERO -->
+<section id="topo" data-hero="" style="padding:clamp(40px,7vw,96px) 20px clamp(56px,8vw,110px);position:relative">
+  <div style="position:absolute;top:60px;right:-120px;width:min(420px,80vw);height:min(420px,80vw);border-radius:50%;background:oklch(0.87 0.16 92);opacity:0.35;filter:blur(60px);pointer-events:none"></div>
+  <div style="position:absolute;bottom:0;left:-160px;width:380px;height:380px;border-radius:50%;background:oklch(0.70 0.12 200);opacity:0.22;filter:blur(70px);pointer-events:none"></div>
+  <div data-hero-inner="" style="position:relative;max-width:960px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:clamp(20px,3vw,28px);text-align:center">
+      <!-- Headline: 5 opções disponíveis no painel Tweaks. Opção 1 = selecionada. -->
+      <h1 data-hero-h1="" style="margin:0;font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(32px,5.4vw,60px);line-height:1.04;text-align:center;max-width:860px;letter-spacing:-0.03em;text-wrap:balance">
+        <sc-if value="{{ h1 }}" hint-placeholder-val="{{ true }}"><span><span style="color:oklch(0.52 0.19 262);background:linear-gradient(transparent 62%,oklch(0.87 0.16 92 / 0.7) 62%);padding:0 4px;border-radius:4px">150 dinâmicas prontas</span> para conduzir grupos com mais participação, conexão e propósito.</span></sc-if>
+        <sc-if value="{{ h2 }}" hint-placeholder-val="{{ false }}"><span>Tenha sempre a <span style="color:oklch(0.52 0.19 262);background:linear-gradient(transparent 62%,oklch(0.87 0.16 92 / 0.7) 62%);padding:0 4px;border-radius:4px">dinâmica certa</span> para o seu próximo encontro.</span></sc-if>
+        <sc-if value="{{ h3 }}" hint-placeholder-val="{{ false }}"><span>Conduza encontros mais participativos com <span style="color:oklch(0.52 0.19 262);background:linear-gradient(transparent 62%,oklch(0.87 0.16 92 / 0.7) 62%);padding:0 4px;border-radius:4px">150 dinâmicas</span> prontas para aplicar.</span></sc-if>
+        <sc-if value="{{ h4 }}" hint-placeholder-val="{{ false }}"><span>Do objetivo ao fechamento: <span style="color:oklch(0.52 0.19 262);background:linear-gradient(transparent 62%,oklch(0.87 0.16 92 / 0.7) 62%);padding:0 4px;border-radius:4px">150 dinâmicas completas</span> para grupos de adultos.</span></sc-if>
+        <sc-if value="{{ h5 }}" hint-placeholder-val="{{ false }}"><span>Menos improviso, mais participação: <span style="color:oklch(0.52 0.19 262);background:linear-gradient(transparent 62%,oklch(0.87 0.16 92 / 0.7) 62%);padding:0 4px;border-radius:4px">150 dinâmicas</span> com ficha completa.</span></sc-if>
+      </h1>
+    <div data-hero-mock="" style="position:relative;width:100%;max-width:720px">
+      <img src="./mockup-hero-v2.webp" alt="Mockup do material 150 Dinâmicas para Adultos: capa no tablet, índice e fichas impressas" style="display:block;width:100%;height:auto">
+      <div data-hero-badge="" style="position:absolute;right:clamp(0px,2vw,24px);bottom:clamp(4px,3vw,32px);width:clamp(84px,15vw,120px);aspect-ratio:1;border-radius:50%;background:oklch(0.52 0.19 262);border:clamp(3px,0.6vw,5px) solid oklch(0.87 0.16 92);box-shadow:0 10px 24px rgba(29,27,38,0.25);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;pointer-events:none">
+        <span style="font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(26px,4.6vw,38px);line-height:0.9">150</span>
+        <span style="font-size:clamp(9px,1.3vw,12px);font-weight:800;letter-spacing:0.06em;text-transform:uppercase;line-height:1.1">dinâmicas</span>
+      </div>
+    </div>
+    <p data-hero-sub="" style="margin:0;font-size:clamp(17px,2vw,20px);line-height:1.55;color:#4A4756;max-width:680px;text-wrap:pretty">Escolha o objetivo do encontro, encontre a <strong style="color:#1D1B26">dinâmica adequada</strong> e siga uma ficha completa com <strong style="color:#1D1B26">tempo, materiais, passo a passo e perguntas de fechamento</strong>.</p>
+    <div data-hero-checks="" style="display:flex;flex-direction:column;gap:10px;text-align:left;max-width:600px;width:100%">
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:oklch(0.56 0.15 152);color:#fff;font-size:14px;font-weight:800;line-height:1;margin-top:1px">✓</span><span style="font-size:16px;line-height:1.45;color:#1D1B26;text-wrap:pretty">Encontre a atividade certa pelos 12 grupos temáticos, sem perder tempo pesquisando.</span></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:oklch(0.56 0.15 152);color:#fff;font-size:14px;font-weight:800;line-height:1;margin-top:1px">✓</span><span style="font-size:16px;line-height:1.45;color:#1D1B26;text-wrap:pretty">Confira participantes, tempo, energia e exposição antes de aplicar.</span></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:oklch(0.56 0.15 152);color:#fff;font-size:14px;font-weight:800;line-height:1;margin-top:1px">✓</span><span style="font-size:16px;line-height:1.45;color:#1D1B26;text-wrap:pretty">Consulte na tela, apresente ou imprima as fichas em A4.</span></div>
+    </div>
+    <!-- CTA PRINCIPAL: aponta para #oferta até que "checkoutUrl" seja preenchido (painel Tweaks). -->
+    <a href="#o-que-recebe" data-hero-cta="" style="display:flex;align-items:center;justify-content:center;gap:10px;padding:20px 26px;width:100%;max-width:600px;text-align:center;line-height:1.2;border-radius:16px;background:oklch(0.52 0.19 262);color:#fff;border:2px solid #1D1B26;box-shadow:4px 4px 0 #1D1B26;font-weight:800;font-size:clamp(16px,1.8vw,19px);letter-spacing:0.03em;text-decoration:none;animation:ctaPulse 1.8s ease-in-out infinite;transition:box-shadow .15s ease,background .15s ease" style-hover="animation-play-state:paused;box-shadow:6px 6px 0 #1D1B26;background:oklch(0.46 0.19 262);color:#fff" style-active="transform:translate(2px,2px);box-shadow:1px 1px 0 #1D1B26" style-focus="outline:3px solid oklch(0.87 0.16 92);outline-offset:3px">QUERO ACESSAR AS 150 DINÂMICAS →</a>
+    <!-- MICROPROVA: arraste 4 fichas reais para as miniaturas -->
+    <div data-hero-proof="" style="display:flex;flex-wrap:wrap;align-items:center;gap:12px 14px;max-width:620px;justify-content:center">
+      <div style="display:flex;flex-shrink:0;padding-left:2px">
+        <div style="width:46px;height:46px;border-radius:50%;background:#fff;border:3px solid oklch(0.52 0.19 262);box-shadow:0 4px 10px rgba(29,27,38,0.12);margin-left:0;overflow:hidden;position:relative;z-index:4"><img src="./pessoa-1.jpg" alt="" style="display:block;width:100%;height:100%;object-fit:cover"></div>
+        <div style="width:46px;height:46px;border-radius:50%;background:#fff;border:3px solid oklch(0.87 0.16 92);box-shadow:0 4px 10px rgba(29,27,38,0.12);margin-left:-14px;overflow:hidden;position:relative;z-index:3"><img src="./pessoa-2.jpg" alt="" style="display:block;width:100%;height:100%;object-fit:cover"></div>
+        <div style="width:46px;height:46px;border-radius:50%;background:#fff;border:3px solid oklch(0.68 0.18 32);box-shadow:0 4px 10px rgba(29,27,38,0.12);margin-left:-14px;overflow:hidden;position:relative;z-index:2"><img src="./pessoa-3.jpg" alt="" style="display:block;width:100%;height:100%;object-fit:cover"></div>
+        <div style="width:46px;height:46px;border-radius:50%;background:#fff;border:3px solid oklch(0.70 0.12 200);box-shadow:0 4px 10px rgba(29,27,38,0.12);margin-left:-14px;overflow:hidden;position:relative;z-index:1"><img src="./pessoa-4.jpg" alt="" style="display:block;width:100%;height:100%;object-fit:cover"></div>
+      </div>
+      <p style="margin:0;flex:0 1 auto;min-width:0;font-size:15px;line-height:1.45;color:#4A4756;text-wrap:pretty"><strong style="color:#1D1B26">Escolha pelo objetivo e aplique com segurança</strong> — cada ficha traz materiais, tempo, passo a passo e debriefing.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 5. COMO FUNCIONA -->
+<section id="como-funciona" style="padding:clamp(64px,9vw,120px) 20px;background:oklch(0.52 0.19 262);color:#fff;scroll-margin-top:0px">
+  <div style="max-width:1160px;margin:0 auto;display:flex;flex-direction:column;gap:48px">
+    <div style="display:flex;flex-direction:column;gap:16px;max-width:720px">
+      <span style="align-self:flex-start;padding:6px 12px;border-radius:999px;background:oklch(0.87 0.16 92);color:#1D1B26;font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Como funciona</span>
+      <h2 style="margin:0;font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(30px,5vw,54px);line-height:1.02;letter-spacing:-0.025em;text-wrap:balance">Três passos entre a necessidade e a aplicação.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:20px">
+      <div style="padding:28px;border-radius:24px;background:#fff;color:#1D1B26;display:flex;flex-direction:column;gap:14px">
+        <span style="font-family:'Bricolage Grotesque';font-weight:800;font-size:64px;line-height:0.9;color:oklch(0.68 0.18 32)">1</span>
+        <h3 style="margin:0;font-family:'Bricolage Grotesque';font-weight:700;font-size:24px;line-height:1.15">Escolha o objetivo do encontro</h3>
+        <p style="margin:0;font-size:16px;line-height:1.5;color:#4A4756">Acolher, energizar, decidir, fechar um ciclo. Use o índice para chegar ao grupo temático certo.</p>
+      </div>
+      <div style="padding:28px;border-radius:24px;background:#fff;color:#1D1B26;display:flex;flex-direction:column;gap:14px">
+        <span style="font-family:'Bricolage Grotesque';font-weight:800;font-size:64px;line-height:0.9;color:oklch(0.64 0.16 152)">2</span>
+        <h3 style="margin:0;font-family:'Bricolage Grotesque';font-weight:700;font-size:24px;line-height:1.15">Consulte a ficha da dinâmica</h3>
+        <p style="margin:0;font-size:16px;line-height:1.5;color:#4A4756">Confira participantes, tempo, energia, exposição e materiais para ver se ela combina com o seu grupo.</p>
+      </div>
+      <div style="padding:28px;border-radius:24px;background:#fff;color:#1D1B26;display:flex;flex-direction:column;gap:14px">
+        <span style="font-family:'Bricolage Grotesque';font-weight:800;font-size:64px;line-height:0.9;color:oklch(0.52 0.19 305)">3</span>
+        <h3 style="margin:0;font-family:'Bricolage Grotesque';font-weight:700;font-size:24px;line-height:1.15">Siga as instruções e conduza o fechamento</h3>
+        <p style="margin:0;font-size:16px;line-height:1.5;color:#4A4756">Aplique o passo a passo e use as perguntas de debriefing para conectar a experiência ao aprendizado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. VEJA O QUE VOCÊ VAI RECEBER — carrossel -->
+<section id="o-que-recebe" style="padding:clamp(64px,9vw,120px) 0;overflow:hidden">
+  <div style="display:flex;flex-direction:column;gap:clamp(32px,5vw,48px)">
+    <div style="max-width:1160px;margin:0 auto;padding:0 20px;display:flex;flex-direction:column;gap:16px;align-items:center;text-align:center">
+      <span style="padding:6px 12px;border-radius:999px;background:oklch(0.94 0.05 92);color:oklch(0.42 0.10 80);font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Por dentro do material</span>
+      <h2 style="margin:0;font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(32px,5vw,54px);line-height:1.02;letter-spacing:-0.025em;text-wrap:balance">Veja o que você vai receber</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px">
+    <div style="overflow:hidden;width:100%">
+      <div style="display:flex;gap:20px;width:max-content;padding:10px 0;animation:marqueeRight 40s linear infinite" style-hover="animation-play-state:paused">
+        <img src="http://goosdtech.online/wp-content/uploads/2026/10/1.png" alt="Página do material 1" loading="lazy" style="display:block;height:clamp(220px,32vw,380px);width:auto;flex-shrink:0;border-radius:16px;box-shadow:0 12px 30px rgba(29,27,38,0.14);background:#fff">
+        <img src="http://goosdtech.online/wp-content/uploads/2026/10/2.png" alt="Página do material 2" loading="lazy" style="display:block;height:clamp(220px,32vw,380px);width:auto;flex-shrink:0;border-radius:16px;box-shadow:0 12px 30px rgba(29,27,38,0.14);background:#fff">
+        <img src="http://goosdtech.online/wp-content/uploads/2026/10/3.png" alt="Página do material 3" loading="lazy" style="display:block;height:clamp(220px,32vw,380px);width:auto;flex-shrink:0;border-radius:16px;box-shadow:0 12px 30px rgba(29,27,38,0.14);background:#fff">
+        <img src="http://goosdtech.online/wp-content/uploads/2026/10/4.png" alt="Página do material 4" loading="lazy" style="display:block;height:clamp(220px,32vw,380px);width:auto;flex-shrink:0;border-radius:16px;box-shadow:0 12px 30px rgba(29,27,38,0.14);background:#fff">
+        <img src="http://goosdtech.online/wp-content/uploads/2026/10/1.png" alt="" aria-hidden="true" loading="lazy" style="display:block;height:clamp(220px,32vw,380px);width:auto;flex-shrink:0;border-radius:16px;box-shadow:0 12px 30px rgba(29,27,38,0.14);background:#fff">
+        <img src="http://goosdtech.online/wp-content/uploads/2026/10/2.png" alt="" aria-hidden="true" loading="lazy" style="display:block;height:clamp(220px,32vw,380px);width:auto;flex-shrink:0;border-radius:16px;box-shadow:0 12px 30px rgba(29,27,38,0.14);background:#fff">
+        <img src="http://goosdtech.online/wp-content/uploads/2026/10/3.png" alt="" aria-hidden="true" loading="lazy" style="display:block;height:clamp(220px,32vw,380px);width:auto;flex-shrink:0;border-radius:16px;box-shadow:0 12px 30px rgba(29,27,38,0.14);background:#fff">
+        <img src="http://goosdtech.online/wp-content/uploads/2026/10/4.png" alt="" aria-hidden="true" loading="lazy" style="display:block;height:clamp(220px,32vw,380px);width:auto;flex-shrink:0;border-radius:16px;box-shadow:0 12px 30px rgba(29,27,38,0.14);background:#fff">
+      </div>
+    </div>
+    <div style="overflow:hidden;width:100%">
+      <div style="display:flex;gap:20px;width:max-content;padding:10px 0;animation:marqueeLeft 40s linear infinite" style-hover="animation-play-state:paused">
+        <img src="http://goosdtech.online/wp-content/uploads/2026/10/5.png" alt="Página do material 5" loading="lazy" style="display:block;height:clamp(220px,32vw,380px);width:auto;flex-shrink:0;border-radius:16px;box-shadow:0 12px 30px rgba(29,27,38,0.14);background:#fff">
+        <img src="http://goosdtech.online/wp-content/uploads/2026/10/6.png" alt="Página do material 6" loading="lazy" style="display:block;height:clamp(220px,32vw,380px);width:auto;flex-shrink:0;border-radius:16px;box-shadow:0 12px 30px rgba(29,27,38,0.14);background:#fff">
+        <img src="http://goosdtech.online/wp-content/uploads/2026/10/7.png" alt="Página do material 7" loading="lazy" style="display:block;height:clamp(220px,32vw,380px);width:auto;flex-shrink:0;border-radius:16px;box-shadow:0 12px 30px rgba(29,27,38,0.14);background:#fff">
+        <img src="http://goosdtech.online/wp-content/uploads/2026/10/8.png" alt="Página do material 8" loading="lazy" style="display:block;height:clamp(220px,32vw,380px);width:auto;flex-shrink:0;border-radius:16px;box-shadow:0 12px 30px rgba(29,27,38,0.14);background:#fff">
+        <img src="http://goosdtech.online/wp-content/uploads/2026/10/5.png" alt="" aria-hidden="true" loading="lazy" style="display:block;height:clamp(220px,32vw,380px);width:auto;flex-shrink:0;border-radius:16px;box-shadow:0 12px 30px rgba(29,27,38,0.14);background:#fff">
+        <img src="http://goosdtech.online/wp-content/uploads/2026/10/6.png" alt="" aria-hidden="true" loading="lazy" style="display:block;height:clamp(220px,32vw,380px);width:auto;flex-shrink:0;border-radius:16px;box-shadow:0 12px 30px rgba(29,27,38,0.14);background:#fff">
+        <img src="http://goosdtech.online/wp-content/uploads/2026/10/7.png" alt="" aria-hidden="true" loading="lazy" style="display:block;height:clamp(220px,32vw,380px);width:auto;flex-shrink:0;border-radius:16px;box-shadow:0 12px 30px rgba(29,27,38,0.14);background:#fff">
+        <img src="http://goosdtech.online/wp-content/uploads/2026/10/8.png" alt="" aria-hidden="true" loading="lazy" style="display:block;height:clamp(220px,32vw,380px);width:auto;flex-shrink:0;border-radius:16px;box-shadow:0 12px 30px rgba(29,27,38,0.14);background:#fff">
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. PROBLEMA -->
+<section style="padding:clamp(64px,9vw,120px) 20px;background:#fff;border-top:1px solid #ECE6DA;border-bottom:1px solid #ECE6DA">
+  <div style="max-width:1160px;margin:0 auto;display:flex;flex-direction:column;gap:48px">
+    <div style="display:flex;flex-direction:column;gap:16px;max-width:720px">
+      <span style="align-self:flex-start;padding:6px 12px;border-radius:999px;background:oklch(0.94 0.05 32);color:oklch(0.42 0.15 32);font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Você já passou por isso?</span>
+      <h2 style="margin:0;font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(30px,5vw,54px);line-height:1.02;letter-spacing:-0.025em;text-wrap:balance">O encontro está marcado. A dinâmica, ainda não.</h2>
+      <p style="margin:0;font-size:clamp(17px,2vw,19px);line-height:1.55;color:#4A4756;text-wrap:pretty">Conduzir grupos de adultos exige mais do que uma boa ideia. Exige escolher bem e saber aplicar.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:18px">
+      <sc-for list="{{ problems }}" as="p" hint-placeholder-count="5">
+        <div style="padding:22px 20px 24px;border-radius:6px 6px 20px 6px;background:{{ p.bg }};transform:rotate({{ p.rot }});box-shadow:0 8px 20px rgba(29,27,38,0.07);display:flex;flex-direction:column;gap:14px;transition:transform .2s ease" style-hover="transform:rotate(0deg) translateY(-4px)">
+          <span style="font-family:'Material Symbols Rounded';font-size:30px;color:#1D1B26">{{ p.icon }}</span>
+          <p style="margin:0;font-size:17px;line-height:1.4;font-weight:600;text-wrap:pretty">{{ p.text }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- 6. O QUE EXISTE EM CADA FICHA -->
+<section id="ficha" style="padding:clamp(64px,9vw,120px) 20px;scroll-margin-top:0px">
+  <div style="max-width:1160px;margin:0 auto;display:flex;flex-direction:column;gap:48px">
+    <div style="display:flex;flex-direction:column;gap:16px;max-width:720px">
+      <span style="align-self:flex-start;padding:6px 12px;border-radius:999px;background:oklch(0.94 0.05 152);color:oklch(0.40 0.13 152);font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Anatomia da ficha</span>
+      <h2 style="margin:0;font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(30px,5vw,54px);line-height:1.02;letter-spacing:-0.025em;text-wrap:balance">Tudo o que você precisa, em uma única ficha.</h2>
+      <p style="margin:0;font-size:clamp(17px,2vw,19px);line-height:1.55;color:#4A4756">Cada uma das 150 dinâmicas segue a mesma estrutura. Você sabe onde procurar cada informação.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:32px;align-items:start">
+      <!-- Demonstração estrutural (sem conteúdo inventado) -->
+      <div style="border-radius:24px;background:#fff;border:2px solid #1D1B26;box-shadow:clamp(4px,1vw,6px) clamp(4px,1vw,6px) 0 #1D1B26;overflow:hidden">
+        <div style="padding:18px clamp(16px,4vw,24px);background:oklch(0.87 0.16 92);border-bottom:2px solid #1D1B26;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+          <span style="font-family:'Bricolage Grotesque';font-weight:800;font-size:22px">Ficha da dinâmica</span>
+          <span style="font-family:'DM Mono';font-size:12px;padding:4px 10px;border-radius:999px;background:#1D1B26;color:#FBF8F2">ESTRUTURA PADRÃO</span>
+        </div>
+        <div style="padding:18px clamp(16px,4vw,24px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,120px),1fr));gap:10px;border-bottom:1.5px dashed #D9D2C4">
+          <sc-for list="{{ fichaMeta }}" as="m" hint-placeholder-count="4">
+            <div style="padding:12px;border-radius:14px;background:{{ m.bg }};display:flex;flex-direction:column;gap:6px">
+              <span style="font-family:'Material Symbols Rounded';font-size:22px">{{ m.icon }}</span>
+              <span style="font-weight:700;font-size:15px">{{ m.label }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <div style="padding:8px clamp(16px,4vw,24px) 20px;display:flex;flex-direction:column">
+          <sc-for list="{{ fichaBlocks }}" as="b" hint-placeholder-count="6">
+            <div style="display:flex;gap:14px;padding:14px 0;border-bottom:1px solid #F0EADF;align-items:flex-start">
+              <span style="flex-shrink:0;display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:{{ b.color }};color:#fff;font-family:'Material Symbols Rounded';font-size:20px">{{ b.icon }}</span>
+              <div style="display:flex;flex-direction:column;gap:2px">
+                <span style="font-weight:700;font-size:16px">{{ b.label }}</span>
+                <span style="font-size:15px;line-height:1.45;color:#4A4756">{{ b.desc }}</span>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      <!-- Ficha real em pilha -->
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <div style="position:relative;width:100%;max-width:440px;margin:0 auto;aspect-ratio:1/1.3">
+          <div style="position:absolute;inset:6% 4% 0 10%;transform:rotate(5deg);border-radius:12px;background:#fff;box-shadow:0 14px 30px rgba(29,27,38,0.14)"><img src="http://goosdtech.online/wp-content/uploads/2026/10/8.png" alt="" aria-hidden="true" style="display:block;width:100%;height:100%;object-fit:cover;border-radius:12px"></div>
+          <div style="position:absolute;inset:3% 8% 3% 6%;transform:rotate(-3deg);border-radius:12px;background:#fff;box-shadow:0 14px 30px rgba(29,27,38,0.16)"><img src="http://goosdtech.online/wp-content/uploads/2026/10/6.png" alt="" aria-hidden="true" style="display:block;width:100%;height:100%;object-fit:cover;border-radius:12px"></div>
+          <div style="position:absolute;inset:0 6% 6% 4%;border-radius:12px;background:#fff;box-shadow:0 24px 50px rgba(29,27,38,0.22)"><img src="http://goosdtech.online/wp-content/uploads/2026/10/5.png" alt="Ficha real de uma dinâmica do material" style="display:block;width:100%;height:100%;object-fit:cover;border-radius:12px"></div>
+        </div>
+        <p style="margin:0;text-align:center;font-size:14px;color:#6B6577">Fichas individuais: consulte na tela, apresente ou imprima.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. GANHOS -->
+<section style="padding:clamp(64px,9vw,120px) 20px;background:#fff;border-top:1px solid #ECE6DA;border-bottom:1px solid #ECE6DA">
+  <div style="max-width:1160px;margin:0 auto;display:flex;flex-direction:column;gap:48px">
+    <div style="display:flex;flex-direction:column;gap:16px;max-width:720px">
+      <span style="align-self:flex-start;padding:6px 12px;border-radius:999px;background:oklch(0.94 0.05 305);color:oklch(0.42 0.17 305);font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Na prática</span>
+      <h2 style="margin:0;font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(30px,5vw,54px);line-height:1.02;letter-spacing:-0.025em;text-wrap:balance">O que muda na sua preparação.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px 28px">
+      <sc-for list="{{ gains }}" as="g" hint-placeholder-count="10">
+        <div style="display:flex;gap:16px;align-items:center;padding:14px 0;border-bottom:1px solid #F0EADF">
+          <span style="flex-shrink:0;display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:{{ g.bg }};font-family:'Material Symbols Rounded';font-size:24px;color:#1D1B26">{{ g.icon }}</span>
+          <span style="font-size:17px;line-height:1.4;font-weight:500;text-wrap:pretty">{{ g.text }}</span>
+        </div>
+      </sc-for>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;align-items:center;text-align:center">
+      <a href="{{ ctaHref }}" style="display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:18px 22px;width:100%;max-width:440px;text-align:center;line-height:1.2;border-radius:16px;background:oklch(0.87 0.16 92);color:#1D1B26;border:2px solid #1D1B26;box-shadow:4px 4px 0 #1D1B26;font-weight:800;font-size:18px;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease" style-hover="transform:translate(-2px,-2px);box-shadow:6px 6px 0 #1D1B26;color:#1D1B26">Quero acessar as 150 dinâmicas<span style="font-family:'Material Symbols Rounded';font-size:22px">arrow_forward</span></a>
+      <span style="font-size:14px;color:#6B6577;font-weight:500">Material digital em PDF • 152 páginas • Acesso após a compra</span>
+    </div>
+  </div>
+</section>
+
+<!-- 8. OS 12 GRUPOS -->
+<section id="grupos" style="padding:clamp(64px,9vw,120px) 20px;scroll-margin-top:0px">
+  <div style="max-width:1160px;margin:0 auto;display:flex;flex-direction:column;gap:48px">
+    <div style="display:flex;flex-direction:column;gap:16px;max-width:720px">
+      <span style="align-self:flex-start;padding:6px 12px;border-radius:999px;background:oklch(0.94 0.05 200);color:oklch(0.40 0.09 200);font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">12 grupos temáticos</span>
+      <h2 style="margin:0;font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(30px,5vw,54px);line-height:1.02;letter-spacing:-0.025em;text-wrap:balance">Uma dinâmica para cada momento do encontro.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:clamp(12px,2vw,16px)">
+      <sc-for list="{{ groups }}" as="g" hint-placeholder-count="12">
+        <div style="padding:22px;border-radius:22px;background:{{ g.bg }};display:flex;flex-direction:column;gap:14px;min-height:180px;transition:transform .2s ease,box-shadow .2s ease" style-hover="transform:translateY(-4px);box-shadow:0 14px 30px rgba(29,27,38,0.10)">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start">
+            <span style="display:grid;place-items:center;width:48px;height:48px;border-radius:14px;background:{{ g.chip }};color:#fff;font-family:'Material Symbols Rounded';font-size:26px">{{ g.icon }}</span>
+            <span style="font-family:'DM Mono';font-size:13px;color:#4A4756">{{ g.n }}</span>
+          </div>
+          <h3 style="margin:0;font-family:'Bricolage Grotesque';font-weight:700;font-size:21px;line-height:1.15">{{ g.name }}</h3>
+          <p style="margin:0;font-size:15px;line-height:1.45;color:#3F3C4A">{{ g.desc }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- 9. SITUAÇÕES DE USO -->
+<section style="padding:0 20px clamp(64px,9vw,120px)">
+  <div style="max-width:1160px;margin:0 auto;padding:clamp(24px,5vw,56px);border-radius:clamp(22px,4vw,32px);background:#1D1B26;color:#FBF8F2;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:40px;align-items:center">
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <span style="align-self:flex-start;padding:6px 12px;border-radius:999px;background:oklch(0.70 0.12 200);color:#1D1B26;font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Situações de uso</span>
+      <h2 style="margin:0;font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(30px,4.4vw,46px);line-height:1.04;letter-spacing:-0.025em;text-wrap:balance">Onde a coleção entra no seu trabalho.</h2>
+      <p style="margin:0;font-size:17px;line-height:1.55;color:#CFCAD9;text-wrap:pretty">Nem toda dinâmica serve para todo contexto. Por isso a organização por grupo e os critérios de cada ficha ajudam você a escolher a opção mais adequada.</p>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:10px">
+      <sc-for list="{{ uses }}" as="u" hint-placeholder-count="10">
+        <span style="display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:14px;background:#2C2A38;border:1px solid #3D3A4C;font-size:16px;font-weight:500"><span style="width:8px;height:8px;border-radius:50%;background:{{ u.c }}"></span>{{ u.t }}</span>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- 12/13. PARA QUEM É / NÃO É -->
+<section style="padding:clamp(64px,9vw,120px) 20px;background:#fff;border-top:1px solid #ECE6DA;border-bottom:1px solid #ECE6DA">
+  <div style="max-width:1160px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:24px">
+    <div style="padding:clamp(24px,4vw,40px);border-radius:28px;background:oklch(0.95 0.04 152);display:flex;flex-direction:column;gap:20px">
+      <h2 style="margin:0;font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(28px,4vw,40px);line-height:1.05;letter-spacing:-0.02em">Para quem é</h2>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <sc-for list="{{ forWho }}" as="t" hint-placeholder-count="8">
+          <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;font-family:'Material Symbols Rounded';font-size:22px;color:oklch(0.45 0.14 152)">check_circle</span><span style="font-size:17px;line-height:1.4">{{ t }}</span></div>
+        </sc-for>
+      </div>
+    </div>
+    <div style="padding:clamp(24px,4vw,40px);border-radius:28px;background:oklch(0.95 0.035 32);display:flex;flex-direction:column;gap:20px">
+      <h2 style="margin:0;font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(28px,4vw,40px);line-height:1.05;letter-spacing:-0.02em">Para quem não é</h2>
+      <p style="margin:0;font-size:16px;line-height:1.5;color:#4A4756">Para ser transparente, este material <strong>não é</strong>:</p>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <sc-for list="{{ notFor }}" as="t" hint-placeholder-count="4">
+          <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex-shrink:0;font-family:'Material Symbols Rounded';font-size:22px;color:oklch(0.52 0.17 32)">do_not_disturb_on</span><span style="font-size:17px;line-height:1.4">{{ t }}</span></div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 14. OFERTA -->
+<section id="oferta" style="padding:clamp(64px,9vw,120px) 20px;scroll-margin-top:0px;background:linear-gradient(180deg,#FBF8F2 0%,oklch(0.95 0.04 92) 100%)">
+  <div style="max-width:980px;margin:0 auto;display:flex;flex-direction:column;gap:32px;align-items:center;text-align:center">
+    <div style="display:flex;flex-direction:column;gap:14px;align-items:center">
+      <span style="padding:6px 12px;border-radius:999px;background:oklch(0.94 0.05 32);color:oklch(0.42 0.15 32);font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">A oferta</span>
+      <h2 style="margin:0;font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(32px,5vw,54px);line-height:1.02;letter-spacing:-0.025em;text-wrap:balance">150 Dinâmicas para Adultos — Edição Vibrante</h2>
+    </div>
+    <div style="width:100%;border-radius:28px;background:#fff;border:2px solid #1D1B26;box-shadow:8px 8px 0 #1D1B26;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));overflow:hidden;text-align:left">
+      <div style="padding:clamp(24px,4vw,40px);display:flex;flex-direction:column;gap:22px;background:oklch(0.97 0.03 92);align-items:center">
+        <img src="http://goosdtech.online/wp-content/uploads/2026/10/Imagem-do-ChatGPT-10-de-out.-de-2026-22_00_56.png" alt="150 Dinâmicas para Adultos — Edição Vibrante" style="display:block;width:100%;max-width:360px;height:auto;filter:drop-shadow(0 18px 30px rgba(29,27,38,0.18))">
+        <div style="display:flex;flex-direction:column;gap:12px;width:100%">
+          <span style="font-family:'Bricolage Grotesque';font-weight:700;font-size:20px">Você recebe</span>
+          <sc-for list="{{ offerItems }}" as="o" hint-placeholder-count="5">
+            <div style="display:flex;gap:12px;align-items:center"><span style="flex-shrink:0;display:grid;place-items:center;width:32px;height:32px;border-radius:10px;background:{{ o.c }};color:#fff;font-family:'Material Symbols Rounded';font-size:18px">{{ o.icon }}</span><span style="font-size:17px;font-weight:500">{{ o.t }}</span></div>
+          </sc-for>
+        </div>
+      </div>
+      <div style="padding:clamp(24px,4vw,40px);display:flex;flex-direction:column;gap:18px;justify-content:center">
+        <!-- PREÇO -->
+        <div style="display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;padding:24px 16px;border-radius:20px;background:oklch(0.96 0.04 150);border:2px solid oklch(0.85 0.08 150)">
+          <span style="font-size:16px;color:#6B6577">De <span style="text-decoration:line-through;text-decoration-color:oklch(0.60 0.20 25);text-decoration-thickness:2px;font-weight:700">R$ 97,00</span> por apenas</span>
+          <div style="display:flex;align-items:flex-start;gap:4px;color:oklch(0.50 0.17 150);line-height:1">
+            <span style="font-family:'Bricolage Grotesque';font-weight:800;font-size:28px;margin-top:10px">R$</span>
+            <span style="font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(64px,10vw,84px);letter-spacing:-0.03em">24,90</span>
+          </div>
+          <span style="padding:5px 12px;border-radius:999px;background:oklch(0.87 0.16 92);color:#1D1B26;font-size:13px;font-weight:800;letter-spacing:0.04em;text-transform:uppercase">Pagamento único</span>
+        </div>
+        <!-- CONDIÇÕES DE PAGAMENTO: inserir se houver -->
+        <!-- CTA DA OFERTA: leva ao checkout quando "checkoutUrl" for preenchido -->
+        <a href="{{ offerHref }}" onClick="{{ trackCheckout }}" style="display:flex;justify-content:center;align-items:center;gap:10px;padding:20px 24px;border-radius:16px;background:oklch(0.58 0.17 150);color:#fff;border:2px solid #1D1B26;box-shadow:4px 4px 0 #1D1B26;font-weight:800;font-size:clamp(16px,1.8vw,19px);letter-spacing:0.03em;text-decoration:none;text-align:center;line-height:1.2;animation:ctaPulse 1.8s ease-in-out infinite;transition:background .15s ease,box-shadow .15s ease" style-hover="animation-play-state:paused;background:oklch(0.50 0.17 150);box-shadow:6px 6px 0 #1D1B26;color:#fff" style-focus="outline:3px solid oklch(0.87 0.16 92);outline-offset:3px">QUERO ACESSAR AS 150 DINÂMICAS →</a>
+        <sc-if value="{{ noCheckout }}" hint-placeholder-val="{{ true }}">
+          <span id="checkout-pendente" style="font-family:'DM Mono';font-size:12px;color:oklch(0.50 0.17 32);text-align:center">LINK DO CHECKOUT AINDA NÃO CONFIGURADO</span>
+        </sc-if>
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px 18px;padding:10px 14px;border-radius:12px;background:oklch(0.96 0.04 150);font-size:14px;color:oklch(0.32 0.10 150);font-weight:700">
+          <span style="display:inline-flex;align-items:center;gap:6px;white-space:nowrap"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:oklch(0.50 0.17 150)">verified_user</span>Compra protegida</span>
+          <span style="display:inline-flex;align-items:center;gap:6px;white-space:nowrap"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:oklch(0.50 0.17 150)">all_inclusive</span>Acesso vitalício</span>
+          <span style="display:inline-flex;align-items:center;gap:6px;white-space:nowrap"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:oklch(0.50 0.17 150)">bolt</span>Acesso imediato</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GARANTIA DE 7 DIAS -->
+<section id="garantia" style="padding:clamp(56px,8vw,100px) 20px">
+  <div style="max-width:960px;margin:0 auto;padding:clamp(28px,5vw,56px);border-radius:32px;background:#fff;border:2px solid #1D1B26;box-shadow:8px 8px 0 oklch(0.56 0.15 152);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:clamp(28px,5vw,56px);align-items:center">
+    <!-- LOGO/SELO DA GARANTIA: arraste a imagem para este espaço -->
+    <img src="./selo-garantia-7-dias.webp" alt="Selo Garantia de 7 dias" style="display:block;width:100%;max-width:280px;height:auto;margin:0 auto">
+
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <span style="align-self:flex-start;padding:6px 12px;border-radius:999px;background:oklch(0.94 0.05 152);color:oklch(0.40 0.13 152);font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Garantia incondicional</span>
+      <h2 style="margin:0;font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(30px,4.6vw,48px);line-height:1.04;letter-spacing:-0.025em;text-wrap:balance">Garantia de 7 dias</h2>
+      <p style="margin:0;font-size:clamp(16px,1.9vw,18px);line-height:1.55;color:#4A4756;text-wrap:pretty">Acesse o material, explore as fichas e veja se ele atende aos seus encontros. Se dentro de 7 dias você achar que não é para você, basta solicitar o reembolso.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px 18px;font-size:15px;font-weight:700;color:oklch(0.36 0.11 152)">
+        <span style="display:inline-flex;align-items:center;gap:6px"><span style="font-family:'Material Symbols Rounded';font-size:20px">event_available</span>7 dias para decidir</span>
+        <span style="display:inline-flex;align-items:center;gap:6px"><span style="font-family:'Material Symbols Rounded';font-size:20px">undo</span>Reembolso simples</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 15. FAQ -->
+<section id="faq" style="padding:clamp(64px,9vw,120px) 20px;background:#fff;border-top:1px solid #ECE6DA;scroll-margin-top:0px">
+  <div style="max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:36px">
+    <h2 style="margin:0;font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(30px,5vw,54px);line-height:1.02;letter-spacing:-0.025em">Perguntas frequentes</h2>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="10">
+        <div style="border-radius:18px;background:{{ f.bg }};border:1.5px solid #ECE6DA;overflow:hidden">
+          <button onClick="{{ f.toggle }}" aria-expanded="{{ f.open }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px clamp(16px,4vw,22px);background:transparent;border:0;font:inherit;font-size:17px;font-weight:700;color:#1D1B26;text-align:left;cursor:pointer;border-radius:18px">
+            <span>{{ f.q }}</span>
+            <span style="flex-shrink:0;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#1D1B26;color:#fff;font-family:'Material Symbols Rounded';font-size:20px">{{ f.icon }}</span>
+          </button>
+          <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}">
+            <div style="padding:0 clamp(16px,4vw,22px) 22px;display:flex;flex-direction:column;gap:10px">
+              <p style="margin:0;font-size:16px;line-height:1.55;color:#4A4756;text-wrap:pretty">{{ f.a }}</p>
+              <sc-if value="{{ f.confirm }}" hint-placeholder-val="{{ false }}">
+                <span style="align-self:flex-start;padding:6px 10px;border-radius:8px;border:1.5px dashed oklch(0.60 0.17 32);font-family:'DM Mono';font-size:12px;color:oklch(0.45 0.16 32)">CONFIRMAR COM O RESPONSÁVEL PELO PRODUTO</span>
+              </sc-if>
+            </div>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- 16. CTA FINAL -->
+<section style="padding:clamp(72px,10vw,130px) 20px;background:oklch(0.52 0.19 262);color:#fff;position:relative;overflow:hidden">
+  <div style="position:absolute;top:-80px;left:8%;width:140px;height:140px;border-radius:28px;background:oklch(0.87 0.16 92);transform:rotate(14deg);opacity:0.9;pointer-events:none"></div>
+  <div style="position:absolute;bottom:-60px;right:6%;width:180px;height:180px;border-radius:50%;background:oklch(0.68 0.18 32);opacity:0.9;pointer-events:none"></div>
+  <div style="position:relative;max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:24px;align-items:center;text-align:center">
+    <h2 style="margin:0;font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(34px,5.5vw,60px);line-height:1.02;letter-spacing:-0.025em;text-wrap:balance">Tenha sempre uma dinâmica adequada pronta para o seu próximo encontro.</h2>
+    <p style="margin:0;font-size:clamp(17px,2vw,20px);line-height:1.55;color:#E4E6FF;max-width:600px">150 fichas completas, organizadas em 12 grupos, para você escolher pelo objetivo e conduzir com clareza.</p>
+    <a href="{{ ctaHref }}" style="display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:20px 24px;width:100%;max-width:460px;text-align:center;line-height:1.2;border-radius:16px;background:oklch(0.87 0.16 92);color:#1D1B26;border:2px solid #1D1B26;box-shadow:5px 5px 0 #1D1B26;font-weight:800;font-size:19px;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease" style-hover="transform:translate(-2px,-2px);box-shadow:7px 7px 0 #1D1B26;color:#1D1B26">Quero acessar as 150 dinâmicas<span style="font-family:'Material Symbols Rounded';font-size:22px">arrow_forward</span></a>
+    <span style="font-size:14px;color:#E4E6FF;font-weight:500">Material digital em PDF • 152 páginas • Acesso após a compra</span>
+  </div>
+</section>
+
+<!-- 17. RODAPÉ — substituir os campos entre colchetes -->
+<footer style="padding:48px 20px 96px;background:#1D1B26;color:#CFCAD9">
+  <div style="max-width:1160px;margin:0 auto;display:flex;flex-direction:column;gap:28px">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-start">
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <span style="font-family:'Bricolage Grotesque';font-weight:800;font-size:20px;color:#FBF8F2">150 Dinâmicas para Adultos</span>
+        <span style="font-size:15px">Mariana Costa — MC Educação e Desenvolvimento</span>
+        <span style="font-size:15px;display:flex;flex-wrap:wrap;gap:4px 10px"><a href="mailto:contato@educdesen.com.br" style="color:#CFCAD9" style-hover="color:oklch(0.87 0.16 92)">contato@educdesen.com.br</a><span aria-hidden="true">|</span><a href="https://wa.me/5511999990000" style="color:#CFCAD9" style-hover="color:oklch(0.87 0.16 92)">WhatsApp: (11) 99999-0000</a></span>
+      </div>
+      <nav style="display:flex;flex-wrap:wrap;gap:20px">
+        <!-- Substituir "#" pelos links reais -->
+        <a href="#" style="color:#FBF8F2;font-size:15px;padding:10px 0;display:inline-block" style-hover="color:oklch(0.87 0.16 92)">Política de Privacidade</a>
+        <a href="#" style="color:#FBF8F2;font-size:15px;padding:10px 0;display:inline-block" style-hover="color:oklch(0.87 0.16 92)">Termos de Uso</a>
+      </nav>
+    </div>
+    <div style="border-top:1px solid #3D3A4C;padding-top:20px;font-size:13px;line-height:1.55;display:flex;flex-direction:column;gap:6px"><span>© 2026 MC Educação e Desenvolvimento. Todos os direitos reservados.</span><span style="color:#9E98AC;text-wrap:pretty">É proibida a reprodução, distribuição, comercialização ou compartilhamento deste material sem autorização expressa do titular dos direitos.</span></div>
+  </div>
+</footer>
+
+
+<!-- LIGHTBOX -->
+<sc-if value="{{ lbOpen }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closeLb }}" role="dialog" aria-modal="true" aria-label="Imagem ampliada" style="position:fixed;inset:0;z-index:100;background:rgba(20,18,28,0.86);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:24px">
+    {{ lbImg }}
+    <sc-if value="{{ lbEmpty }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:40px;border-radius:16px;border:2px dashed #8B8599;color:#E4E1EA;font-family:'DM Mono';font-size:14px;text-align:center;max-width:420px">INSIRA A IMAGEM REAL NESTE ESPAÇO DA GALERIA PARA AMPLIÁ-LA</div>
+    </sc-if>
+    <div style="display:flex;gap:16px;align-items:center;color:#fff">
+      <span style="font-weight:700">{{ lbLabel }}</span>
+      <button onClick="{{ closeLb }}" style="display:inline-flex;align-items:center;gap:6px;padding:10px 14px;border-radius:10px;border:1.5px solid #fff;background:transparent;color:#fff;font:inherit;font-weight:700;cursor:pointer" style-hover="background:#fff;color:#1D1B26"><span style="font-family:'Material Symbols Rounded';font-size:18px">close</span>Fechar</button>
+    </div>
+  </div>
+</sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;headline&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;1&quot;,&quot;options&quot;:[&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Copy&quot;},&quot;checkoutUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://pay.wiapy.com/UfAN4bGxcYE1&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Checkout&quot;}}">
+class Component extends DCLogic {
+  state = { faq: 0, lb: null };
+
+  componentDidMount() {
+    this._onKey = (e) => { if (e.key === 'Escape') this.setState({ lb: null }); };
+    window.addEventListener('keydown', this._onKey);
+    const hero = document.getElementById('topo');
+    if (hero && 'IntersectionObserver' in window) {
+      this._io = new IntersectionObserver(([e]) => this.setState({ heroVisible: e.isIntersecting }), { threshold: 0 });
+      this._io.observe(hero);
+    }
+  }
+  componentWillUnmount() { window.removeEventListener('keydown', this._onKey); if (this._io) this._io.disconnect(); }
+
+  openLb(id, label) {
+    const el = document.getElementById(id);
+    let src = el && el._img && el._img.getAttribute('src');
+    if (!src && el) src = el.getAttribute('src');
+    this.setState({ lb: { src: src || null, label } });
+  }
+
+  renderVals() {
+    const h = String(this.props.headline ?? '1');
+    // CHECKOUT: cole aqui (ou no painel Tweaks) o link real do checkout.
+    const url = (this.props.checkoutUrl || 'https://pay.wiapy.com/UfAN4bGxcYE1').trim();
+    const Y = 'oklch(0.94 0.08 92)', C = 'oklch(0.93 0.05 32)', G = 'oklch(0.93 0.05 152)', T = 'oklch(0.93 0.05 200)', P = 'oklch(0.93 0.05 305)', B = 'oklch(0.93 0.04 262)';
+    const sB = 'oklch(0.52 0.19 262)', sC = 'oklch(0.62 0.18 32)', sG = 'oklch(0.56 0.15 152)', sT = 'oklch(0.58 0.11 200)', sP = 'oklch(0.52 0.19 305)', sY = 'oklch(0.70 0.15 80)';
+    const tints = [Y, C, G, T, P, B];
+    const solids = [sB, sC, sG, sT, sP, sY];
+
+    const groupsRaw = [
+      ['waving_hand', 'Acolhimento e conexão', 'Para abrir o encontro e aproximar os participantes.'],
+      ['bolt', 'Energia e presença', 'Para despertar o grupo e trazer atenção ao momento.'],
+      ['verified_user', 'Confiança e segurança', 'Para criar um ambiente seguro para participar.'],
+      ['forum', 'Comunicação e escuta', 'Para praticar clareza ao falar e atenção ao ouvir.'],
+      ['groups', 'Cooperação e equipe', 'Para trabalhar em conjunto rumo a um objetivo comum.'],
+      ['flag', 'Liderança e decisão', 'Para exercitar escolhas, responsabilidade e direção.'],
+      ['lightbulb', 'Criatividade e soluções', 'Para gerar ideias e encontrar novos caminhos.'],
+      ['self_improvement', 'Autoconhecimento e propósito', 'Para refletir sobre valores, escolhas e sentido.'],
+      ['school', 'Aprendizado e fechamento', 'Para consolidar o que foi vivido e encerrar bem.'],
+      ['task_alt', 'Produtividade pessoal', 'Para pensar prioridades, foco e organização.'],
+      ['diversity_3', 'Cultura e pertencimento', 'Para fortalecer vínculos e a identidade do grupo.'],
+      ['sync_alt', 'Mudança e adaptação', 'Para lidar com transições e novos cenários.'],
+    ];
+    const groups = groupsRaw.map((g, i) => ({ icon: g[0], name: g[1], desc: g[2], n: String(i + 1).padStart(2, '0'), bg: tints[i % 6], chip: solids[i % 6] }));
+
+    const problems = [
+      ['help', 'Precisar conduzir uma atividade e não saber qual escolher.'],
+      ['water', 'Encontrar só sugestões rasas, sem instruções claras.'],
+      ['schedule', 'Gastar tempo adaptando ideias soltas da internet.'],
+      ['wrong_location', 'Aplicar uma dinâmica que não combina com o objetivo ou o grupo.'],
+      ['sentiment_stressed', 'Ter receio de que a atividade fique confusa, infantilizada ou desconfortável.'],
+    ].map((p, i) => ({ icon: p[0], text: p[1], bg: [Y, C, T, G, P][i], rot: ['-1.5deg', '1deg', '-0.5deg', '1.5deg', '-1deg'][i] }));
+
+    const fichaMeta = [['group', 'Participantes', Y], ['timer', 'Tempo', C], ['bolt', 'Energia', G], ['visibility', 'Exposição', P]]
+      .map(m => ({ icon: m[0], label: m[1], bg: m[2] }));
+    const fichaBlocks = [
+      ['target', 'Objetivo', 'O propósito da atividade, para você saber se ela atende ao encontro.', sB],
+      ['inventory_2', 'Materiais', 'A lista do que preparar antes de começar.', sY],
+      ['format_list_numbered', 'Passo a passo', 'Instruções em sequência para conduzir sem improviso.', sC],
+      ['question_answer', 'Debriefing', 'Perguntas para o fechamento e para conectar a vivência ao aprendizado.', sG],
+      ['health_and_safety', 'Cuidado essencial', 'O ponto de atenção mais importante na aplicação.', sP],
+      ['devices', 'Remoto ou híbrido', 'Orientações para adaptar a atividade a encontros on-line.', sT],
+    ].map(b => ({ icon: b[0], label: b[1], desc: b[2], color: b[3] }));
+
+    const gains = [
+      ['timer', 'Economizar tempo de preparação.'],
+      ['target', 'Escolher atividades conforme o objetivo do encontro.'],
+      ['record_voice_over', 'Conduzir instruções com mais clareza.'],
+      ['rule', 'Evitar improvisações desnecessárias.'],
+      ['tune', 'Adaptar a atividade ao tamanho e ao perfil do grupo.'],
+      ['shield_person', 'Promover participação sem forçar exposição pessoal.'],
+      ['psychology', 'Fazer fechamentos que conectam a experiência ao aprendizado.'],
+      ['devices', 'Ter opções para encontros presenciais, remotos e híbridos.'],
+      ['print', 'Consultar ou imprimir fichas individualmente.'],
+      ['shuffle', 'Variar as atividades sem repetir sempre as mesmas ideias.'],
+    ].map((g, i) => ({ icon: g[0], text: g[1], bg: tints[i % 6] }));
+
+    const uses = ['Integração de equipes', 'Treinamentos', 'Reuniões', 'Workshops', 'Aulas para adultos', 'Encontros de liderança', 'Planejamento e tomada de decisão', 'Fechamento e avaliação', 'Processos de mudança', 'Comunicação e cooperação']
+      .map((t, i) => ({ t, c: ['oklch(0.87 0.16 92)', 'oklch(0.72 0.16 32)', 'oklch(0.72 0.15 152)', 'oklch(0.76 0.11 200)', 'oklch(0.70 0.15 305)'][i % 5] }));
+
+    const galleryRaw = [
+      ['galeria-capa', 'Capa', 'INSERIR CAPA REAL AQUI'],
+      ['galeria-indice', 'Índice organizador', 'INSERIR ÍNDICE REAL AQUI'],
+      ['galeria-p1', 'Página interna', 'INSERIR PÁGINA INTERNA REAL'],
+      ['galeria-p2', 'Página interna', 'INSERIR PÁGINA INTERNA REAL'],
+      ['galeria-p3', 'Ficha de dinâmica', 'INSERIR FICHA REAL'],
+      ['galeria-p4', 'Ficha de dinâmica', 'INSERIR FICHA REAL'],
+      ['galeria-p5', 'Ficha de dinâmica', 'INSERIR FICHA REAL'],
+      ['galeria-p6', 'Ficha de dinâmica', 'INSERIR FICHA REAL'],
+    ];
+    const gallery = galleryRaw.map(g => ({ id: g[0], label: g[1], ph: g[2], open: () => this.openLb(g[0], g[1]) }));
+
+    const faqRaw = [
+      ['O material é físico ou digital?', 'Digital. Você recebe um arquivo em PDF com 152 páginas em formato A4.', false],
+      ['Posso imprimir as fichas?', 'Sim. As fichas são individuais e foram pensadas para consultar na tela, apresentar ou imprimir em A4.', false],
+      ['As atividades são voltadas para adultos?', 'Sim. Todas as 150 dinâmicas foram reunidas para grupos de adultos. Não é um conjunto de brincadeiras infantis.', false],
+      ['Posso usar em empresas, aulas e workshops?', 'O material foi organizado para contextos como treinamentos, reuniões, workshops e aulas para adultos. As condições de licença para uso profissional ou comercial devem ser confirmadas.', true],
+      ['Existem opções para encontros remotos?', 'Sim. As fichas trazem orientações para aplicação remota ou híbrida.', false],
+      ['Preciso aplicar as dinâmicas na ordem?', 'Não. Elas estão organizadas em 12 grupos temáticos e você escolhe conforme o objetivo de cada encontro.', false],
+      ['Como escolho a atividade adequada?', 'Comece pelo objetivo do encontro e vá ao grupo temático correspondente. Depois confira na ficha a quantidade de participantes, o tempo, o nível de energia e o nível de exposição pessoal.', false],
+      ['O material ensina a condução?', 'Cada ficha traz passo a passo, perguntas de debriefing e cuidados essenciais. O material não é um curso completo de formação de facilitadores.', false],
+      ['Quantas pessoas podem participar?', 'Depende da dinâmica. Cada ficha indica a quantidade de participantes recomendada.', false],
+      ['Receberei todas as 150 dinâmicas?', 'Sim. As 150 dinâmicas estão no mesmo PDF, com capa e índice organizador. A forma e o prazo de acesso devem ser confirmados.', true],
+    ];
+    const faqs = faqRaw.map((f, i) => {
+      const open = this.state.faq === i;
+      return { q: f[0], a: f[1], confirm: f[2], open, icon: open ? 'remove' : 'add', bg: open ? '#FBF8F2' : '#fff', toggle: () => this.setState({ faq: open ? -1 : i }) };
+    });
+
+    const lb = this.state.lb;
+    return {
+      h1: h === '1', h2: h === '2', h3: h === '3', h4: h === '4', h5: h === '5',
+      ctaHref: url || '#oferta',
+      offerHref: url || '#checkout-pendente',
+      noCheckout: !url,
+      sticky: (this.props.stickyCta ?? true) && this.state.heroVisible === false,
+      problems, fichaMeta, fichaBlocks, gains, groups, uses, gallery, faqs,
+      before: ['Pesquisa demorada.', 'Orientações incompletas.', 'Escolha por tentativa e erro.', 'Dificuldade para conduzir o fechamento.'],
+      after: ['Material organizado.', 'Critérios claros.', 'Passo a passo visível.', 'Perguntas de debriefing.', 'Opções para diferentes objetivos.'],
+      forWho: ['Facilitadores de grupos.', 'Profissionais de Recursos Humanos.', 'Líderes e gestores.', 'Professores e educadores.', 'Treinadores e palestrantes.', 'Mentores e consultores.', 'Organizadores de encontros, oficinas e eventos.', 'Quem conduz grupos de adultos e quer mais participação, conexão e propósito.'],
+      notFor: ['Um curso completo de formação de facilitadores.', 'Uma solução automática que dispensa preparação.', 'Um conjunto de brincadeiras infantis.', 'Um substituto para cuidados profissionais em situações clínicas ou sensíveis.'],
+      offerItems: [['devices', 'Material digital', sC], ['description', '152 páginas em A4', sB], ['stacks', '150 dinâmicas', sG], ['category', '12 grupos temáticos', sP], ['print', 'Fichas prontas para consulta e impressão', sT], ['all_inclusive', 'Acesso vitalício', sB], ['bolt', 'Acesso imediato', sY], ['redeem', 'Bônus: atualizações futuras', sC]].map(o => ({ icon: o[0], t: o[1], c: o[2] })),
+      lbImg: lb && lb.src ? React.createElement('img', { src: lb.src, alt: lb.label, style: { maxWidth: 'min(92vw,900px)', maxHeight: '82vh', borderRadius: 12, boxShadow: '0 30px 80px rgba(0,0,0,0.5)', background: '#fff' } }) : null,
+      // Meta Pixel: dispara InitiateCheckout ao clicar no botão de compra do card de oferta
+      trackCheckout: () => { try { if (window.fbq) window.fbq('track', 'InitiateCheckout', { value: 24.90, currency: 'BRL', content_name: '150 Dinâmicas para Adultos — Edição Vibrante' }); } catch (e) {} },
+      today: new Date().toLocaleDateString('pt-BR'),
+      lbOpen: !!lb, lbEmpty: !!(lb && !lb.src), lbSrc: lb ? lb.src : '', lbLabel: lb ? lb.label : '',
+      closeLb: (e) => { if (e && e.target !== e.currentTarget && !e.currentTarget.contains(e.target)) return; if (e && e.target.tagName === 'IMG') return; this.setState({ lb: null }); },
+    };
+  }
+}
+</script>
+</body>
+</html>
